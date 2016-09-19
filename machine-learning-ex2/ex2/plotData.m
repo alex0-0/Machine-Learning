@@ -13,9 +13,10 @@ figure; hold on;
 %
 
 
-
-
-
+admittedIndex = find( y == 1);
+notAdmittedIndex = find( y == 0);
+plot(X(admittedIndex, 1), X(admittedIndex, 2), 'k+', 'LineWidth', 2, 'MarkerSize', 7);
+plot(X(notAdmittedIndex, 1), X(notAdmittedIndex, 2), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 7);
 
 
 
