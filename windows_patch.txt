@@ -1,0 +1,6 @@
+submitWithConfiguration
+
+  responseBody = urlread(submissionUrl, 'post', params);
+
+
+  [code, responseBody] = system(sprintf('echo jsonBody=%s | curl -k -X POST -d @- %s', body, submissionUrl));
