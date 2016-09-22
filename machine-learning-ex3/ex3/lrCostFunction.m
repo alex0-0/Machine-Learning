@@ -37,11 +37,9 @@ grad = zeros(size(theta));
 %
 
 
-
-
-
-
-
+regConstant = lambda / (2 * m) .* theta'(:,2:end) * theta(2:end,:);
+J = 1/m * ( - y' * log(sigmoid(X * theta)) - (1 .- y)' * log(1 .- sigmoid(X * theta))) + regConstant;
+grad = 1 / m * (X' * (sigmoid(X * theta) .- y)) + [0; ones(size(theta,1)-1, 1)] .* (lambda / m .* theta);
 
 
 
