@@ -78,19 +78,34 @@ regularization = lambda / (2*m) * (sum(sum(Theta1(:,2:end).^2)) + sum(sum(Theta2
 
 J = 1/m *  sum(tmp_sum) + regularization;
 
-delta = 0;
-z2 = Theta1 * [ones(m, 1) X]';
-z3 = Theta2 * [ones(1, m); sigmoid(z2)];
-error_term_3 = z3 - tmp_y';
-error_term_2 = Theta2' * error_term_3 .* sigmoidGradient([ones(1, m); z2]);
+%z2 = Theta1 * [ones(m, 1) X]';
+%z3 = Theta2 * [ones(1, m); sigmoid(z2)];
+%delta_3 = sigmoid(z3) - tmp_y';
+%delta_2 = Theta2(:,2:end)' * delta_3 .* sigmoidGradient(z2);
+%
+%size(delta_3)
+%size(z2)
+%size(delta_2)
+%size(X)
+%Theta2_grad = 1/m * delta_3 * sigmoid(z2)';
+%Theta1_grad = 1/m *  delta_2 * X;
 
-size(error_term_3)
-size(z2)
-Theta2_grad = error_term_3 * sigmoid(z2)';
-%size(Theta2_grad)
-% 5000 10   
+delta_3 = zeros(1, num_labels);
+delta_2 = zeros(1, hidden_layer_size);
+for i = 1:m
+    z2 = Theta1 * [1; X(i,:)'];
+    z3 = Theta2 * [1; sigmoid(z2)];
+    delta_3 = sigmoid(z3) - tmp_y(i,:)';
+    delta_2 = Theta2(:, 2:end)' * delta_3 .* sigmoidGradient(z2);
+    Theta2_grad(:, 1) += delta_3;
+    Theta1_grad(:, 1) += delta_2;
+    Theta2_grad(:, 2:end) += delta_3 * sigmoid(z2)' .+ lambda/m .* Theta2(:, 2:end);
+    Theta1_grad(:, 2:end) += delta_2 * X(i,:) .+ lambda/m .* Theta1(:, 2:end);
 
+end
 
+Theta1_grad = Theta1_grad / m;
+Theta2_grad = Theta2_grad / m;
 
 % -------------------------------------------------------------
 
@@ -98,6 +113,5 @@ Theta2_grad = error_term_3 * sigmoid(z2)';
 
 % Unroll gradients
 grad = [Theta1_grad(:) ; Theta2_grad(:)];
-
 
 end
