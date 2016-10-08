@@ -61,22 +61,34 @@ Theta2_grad = zeros(size(Theta2));
 %               the regularization separately and then add them to Theta1_grad
 %               and Theta2_grad from Part 2.
 %
+tmp_y = zeros(size(y, 1), num_labels);
+for i = 1:m
+  tmp_y(i, y(i)) = 1;
+end
 
+activation_value = sigmoid(Theta2 * [ones(1, m); sigmoid(Theta1 * [ones(m, 1) X]')]);
+tmp_sum = zeros(m, 1);
+%size(tmp_y);
+%size(activation_value);
+for i = 1:m
+ tmp_sum(i) = -tmp_y(i,:) * log(activation_value(:, i)) - (1 - tmp_y(i,:)) * log(1 .- activation_value(:,i));
+end
 
+regularization = lambda / (2*m) * (sum(sum(Theta1(:,2:end).^2)) + sum(sum(Theta2(:,2:end).^2)));
 
+J = 1/m *  sum(tmp_sum) + regularization;
 
+delta = 0;
+z2 = Theta1 * [ones(m, 1) X]';
+z3 = Theta2 * [ones(1, m); sigmoid(z2)];
+error_term_3 = z3 - tmp_y';
+error_term_2 = Theta2' * error_term_3 .* sigmoidGradient([ones(1, m); z2]);
 
-
-
-
-
-
-
-
-
-
-
-
+size(error_term_3)
+size(z2)
+Theta2_grad = error_term_3 * sigmoid(z2)';
+%size(Theta2_grad)
+% 5000 10   
 
 
 
