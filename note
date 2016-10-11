@@ -1,3 +1,7 @@
 Backpropagation
 https://vkbansal.me/blog/machine-learning/neural-networks-learning/
 http://ufldl.stanford.edu/wiki/index.php/Backpropagation_Algorithm
+
+
+high regularization parameter lambda leads to under-fit, which shows high bias
+while low regularization parameter lambda leads to over-fit, whichs shows high variance.
