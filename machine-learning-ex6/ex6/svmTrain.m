@@ -52,7 +52,7 @@ H = 0;
 % that the svm training will run faster.
 if strcmp(func2str(kernelFunction), 'linearKernel')
     % Vectorized computation for the Linear Kernel
-    % This is equivalent to computing the kernel on every pair of examples
+    % This is equivalew'int to computing the kernel on every pair of examples
     K = X*X';
 elseif strfind(func2str(kernelFunction), 'gaussianKernel')
     % Vectorized RBF Kernel

@@ -25,10 +25,22 @@ sigma = 0.3;
 
 
 
-
-
-
-
 % =========================================================================
 
+C_options = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30];
+sigma_options = [0.01, 0.03, 0.1, 0.3, 1, 3, 10, 30];
+max_accuracy = 0;
+
+for m = 1:8
+  for n = 1:8
+%    C_options(m)
+%    sigma_options(n)
+    model = svmTrain(X, y, C_options(m), @(x1, x2) gaussianKernel(x1, x2, sigma_options(n)));
+    predictions = svmPredict(model, Xval);
+    accuracy = mean(double(predictions ~= yval));
+    if accuracy > max_accuracy
+      C = C_options(m);
+      sigma = sigma_options(n);
+     end
+   end
 end
