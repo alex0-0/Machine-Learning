@@ -38,7 +38,8 @@ for m = 1:8
     model = svmTrain(X, y, C_options(m), @(x1, x2) gaussianKernel(x1, x2, sigma_options(n)));
     predictions = svmPredict(model, Xval);
     accuracy = mean(double(predictions ~= yval));
-    if accuracy > max_accuracy
+    if accuracy < max_accuracy
+      max_accuracy = accuracy;
       C = C_options(m);
       sigma = sigma_options(n);
      end
