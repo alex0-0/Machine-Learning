@@ -1,0 +1,108 @@
+Jure Leskovec	https://cs.stanford.edu/people/jure/pubs/
+Chief Scientist at Pinterest, Professor at Stanford
+Data mining and machine learning, with emphasis on mining and modeling large networks, link analysis and text mining.
+Specialties: Artificial intelligence, machine learning, data mining, social networks, text and web mining, mining large graphs and networks, applications of machine learning and data mining.
+
+
+
+
+Michael I. Jordan
+https://people.eecs.berkeley.edu/~jordan/
+
+
+
+
+Geoffrey Hinton ( no more sole advise any new graduate student)
+www.cs.toronto.edu/~hinton/
+ He was one of the first researchers who demonstrated the use of generalized backpropagation algorithm for training multi-layer neural nets and is an important figure in the deep learning community.
+
+
+
+
+
+***
+Andrew Ng
+http://www.andrewng.org/
+
+
+
+
+
+
+
+Yaser S. Abu-Mostafa
+https://work.caltech.edu/
+Author of Learning From Data
+
+
+
+
+
+
+Tom M. Mitchell
+http://www.cs.cmu.edu/~tom/
+
+
+
+
+
+https://www.quora.com/Who-are-the-top-professors-in-Machine-Learning
+
+https://www.quora.com/What-are-the-best-graduate-schools-for-studying-machine-learning
+
+
+google  machine learning top professors
+
+
+http://cs.brown.edu/people/alexpap/faculty_dataset.html
+
+http://dataconomy.com/10-machine-learning-experts-you-need-to-know/
+
+
+
+1. Two ¡°reach¡± schools (such as Carnegie Mellon, MIT, Berkeley, or Stanford for top students; or UCLA or Texas for competitive students). If you can get into one of these, then there is no need to apply to all of them. However, applying to more than one may improve your chances of being admitted.
+
+2. Two solid choices that you have a reasonable chance of being admitted to, if you are a good student (such as Georgia Tech or Ohio State). These are reputable schools with programs you would be proud to participate in. The exact choice of schools will depend on the caliber of student you are, but choose two that you have some likelihood of being admitted to based on your academic profile.
+
+3. One or two ¡°safety¡± schools. These are schools which you are almost sure to get into and only serve as a back-up in case you are not accepted into any of your preferred schools. If you choose your mid-level schools wisely, you should not need to rely on these; however, it is always a good idea to have a Plan B ready, just in case your Plan A does not pan out. Many smaller state and private schools can serve as such back-up schools.
+
+
+Stanford University	 robotics, artificial intelligence and scientific computing.
+
+Massachusetts Institute of Technology (MIT)	algorithms, information theory, multicore programming, and robotics.
+
+University of California Berkeley	computer architecture, operating systems, robotics, database management systems, and scientific computing.
+
+ Princeton University	 computational markets, networks and systems, computer architecture, and programming languages, algorithms and data structures, computational linguistics, computer music, cryptography, and programming languages.
+
+Carnegie Mellon University	machine learning, artificial intelligence, systems, and theory.
+
+Cornell University	database systems, security, graphics, robotics, and computer architecture
+
+ University of Southern California	 games design, artificial intelligence, computer networks, intelligent robotics, and software engineering
+
+The University of Texas at Austin	 formal methods, model-driven engineering, bioinformatics, and graphics and visualization
+
+Harvard University	imaging, security, artificial intelligence, linguistics, and computational theor
+
+California Institute of Technology (Caltech)	 information theory, robotics, and operating systems
+
+ University of Illinois at Urbana-Champaign
+
+ University of Maryland College Park	computer vision, bioinformatics, artificial intelligence, and graphics
+
+ University of California San Diego	spanning theory, computation, software, and hardware
+
+University of Michigan Ann Arbor	robotics, computer vision, programming languages, and coding theory
+
+Purdue University	data mining, computational biology, software engineering, and distributed systems
+
+Columbia University	 natural language processing, software systems, and computer security
+
+University of Washington	Computer Graphics, Vision, Animation, and Game Science.
+
+Georgia Institute of Technology (Georgia Tech)	 algorithms and optimization, bioengineering, bioinformatics, and computer science,
+
+University of California Los Angeles (UCLA)	
+
+Yale University		computer music, robotics, computer graphics, scientific computing and applied math, and machine learning and artificial intelligence
