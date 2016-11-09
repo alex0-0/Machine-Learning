@@ -1,3 +1,11 @@
+california universities
+http://www.4icu.org/us/california/
+
+
+standford machine learning 
+https://www-cs.stanford.edu/research/machinelearning
+
+
 Jure Leskovec	https://cs.stanford.edu/people/jure/pubs/
 Chief Scientist at Pinterest, Professor at Stanford
 Data mining and machine learning, with emphasis on mining and modeling large networks, link analysis and text mining.
