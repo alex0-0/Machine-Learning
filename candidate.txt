@@ -6,6 +6,19 @@ standford machine learning
 https://www-cs.stanford.edu/research/machinelearning
 
 
+------------------  UCLA  -------------------------
+Fei Sha
+http://web.cs.ucla.edu/~feisha/
+
+
+Yizhou Sun
+http://web.cs.ucla.edu/~yzsun/
+
+Guy Van den Broeck
+http://web.cs.ucla.edu/~guyvdb/
+
+---------------------------------------
+
 Jure Leskovec	https://cs.stanford.edu/people/jure/pubs/
 Chief Scientist at Pinterest, Professor at Stanford
 Data mining and machine learning, with emphasis on mining and modeling large networks, link analysis and text mining.
